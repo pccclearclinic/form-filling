@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { Button, Typography, Container, Box } from '@mui/material';
 
 const FrontPage = () => {
-  const backend_url = import.meta.env.DEV ? "http://localhost:3000" : "https://form-filling-z5upmrywta-uc.a.run.app/#";
-  console.log(backend_url)
   return (
     <Container
       sx={{
@@ -36,7 +34,7 @@ const FrontPage = () => {
       >
         <Button
           component={Link}
-          to={`${backend_url}/gender`}
+          to="/gender"
           variant="contained"
           color="primary"
           size="large"
@@ -45,7 +43,7 @@ const FrontPage = () => {
         </Button>
         <Button
           component={Link}
-          to={`${backend_url}/eviction`}
+          to="/eviction"
           variant="contained"
           color="primary"
           size="large"

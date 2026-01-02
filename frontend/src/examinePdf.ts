@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import fs from "fs/promises"; // Importing fs promises-based module
 
 export async function examinePdf() {
-  const formUrl = "https://pccclearclinic.github.io/form-filling/pdfs/EvictionExpungement.pdf";
+  const formUrl = "https://pccclearclinic.github.io/form-filling/pdfs/NameAndGenderStatewidePacket.pdf";
   const formPdfBytes = await fetch(formUrl).then((res) => res.arrayBuffer());
   const pdfDoc = await PDFDocument.load(formPdfBytes);
 
